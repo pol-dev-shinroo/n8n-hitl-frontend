@@ -85,12 +85,12 @@ function ReviewDashboardContent() {
 
       {/* Image Display */}
       <div className="p-6 bg-gray-50/50">
-        <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-inner bg-gray-200 group">
+        <div className="relative w-full overflow-hidden rounded-xl shadow-inner bg-gray-200 group flex justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={imageUrl}
             alt="AI Generated Scene"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-[500px] object-contain transition-transform duration-500 group-hover:scale-105"
             onLoad={() => console.log('Image loaded')}
             onError={() => {
               setErrorMessage('Failed to load the image. It might be an invalid URL.');
