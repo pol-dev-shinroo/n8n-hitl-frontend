@@ -90,7 +90,7 @@ function ReviewDashboardContent() {
           <img
             src={imageUrl}
             alt="AI Generated Scene"
-            className="w-full h-[500px] object-contain transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-[500px] object-contain bg-black transition-transform duration-500 group-hover:scale-105"
             onLoad={() => console.log('Image loaded')}
             onError={() => {
               setErrorMessage('Failed to load the image. It might be an invalid URL.');
